@@ -42,7 +42,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/bar"
         android:layout_above="@+id/bottom"
-        android:id="@+id/recycler_view"
+        android:id="@+id/recycler_view_ch"
         />
 
     <RelativeLayout
