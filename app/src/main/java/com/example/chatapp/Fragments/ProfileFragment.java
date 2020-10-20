@@ -84,7 +84,7 @@ public class ProfileFragment extends Fragment {
                if(user.getImageurl().equals("default")){
                    profile_image.setImageResource(R.mipmap.ic_launcher);
                }else{
-                   Glide.with(getActivity()).load(user.getImageurl()).into(profile_image);
+                   Glide.with(getContext()).load(user.getImageurl()).into(profile_image);
 
                }
            }
@@ -149,7 +149,7 @@ public class ProfileFragment extends Fragment {
                         DatabaseReference reference=FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
 
                         HashMap<String,Object> hashMap=new HashMap<>();
-                        hashMap.put("imageurl",""+myurl);
+                        hashMap.put("imageURL",""+myurl);
                         reference.updateChildren(hashMap);
                         pd.dismiss();
                     }else{

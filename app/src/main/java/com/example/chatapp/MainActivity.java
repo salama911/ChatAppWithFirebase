@@ -30,6 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                    profile_img.setImageResource(R.mipmap.ic_launcher);
                 }
                 else{
-                    Glide.with(MainActivity.this).load(user.getImageurl()).into(profile_img);
+                    Glide.with(getApplicationContext()).load(user.getImageurl()).into(profile_img);
                 }
             }
 
@@ -109,8 +110,7 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.logout :
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(MainActivity.this,StartActivity.class));
-                finish();
+                startActivity(new Intent(MainActivity.this,StartActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 return true;
         }
         return false;
@@ -153,4 +153,6 @@ public class MainActivity extends AppCompatActivity {
             return titles.get(position);
         }
     }
+
+
 }

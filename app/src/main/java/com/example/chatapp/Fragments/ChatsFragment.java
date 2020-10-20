@@ -114,7 +114,7 @@ public class ChatsFragment extends Fragment {
 
                     }
                 }
-                userAdapter=new UserAdapter(getContext(),mUsers);
+                userAdapter=new UserAdapter(getContext(),mUsers,true);
                 recyclerView.setAdapter(userAdapter);
             }
 
@@ -125,10 +125,3 @@ public class ChatsFragment extends Fragment {
         });
     }
 }
-
- /*for(int i=0;i<mUsers.size();i++){
-        User user1 = mUsers.get(i);
-        if(!user.getId().equals(user1.getId())){
-        mUsers.add(user);
-        }
-        }*/
