@@ -47,6 +47,7 @@ public class MessageActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     MessageAdapter messageAdapter;
     List <Chat>chatList;
+    String userid;
 
     ValueEventListener seenlistener;
     @Override
@@ -80,7 +81,7 @@ public class MessageActivity extends AppCompatActivity {
 
 
         intent=getIntent();
-        final String userid=intent.getStringExtra("userid");
+         userid=intent.getStringExtra("userid");
 
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,6 +163,22 @@ public class MessageActivity extends AppCompatActivity {
 
         reference.push().setValue(hashMap);
 
+        final DatabaseReference chatRef=FirebaseDatabase.getInstance().getReference("ChatList")
+                .child(fuser.getUid())
+                .child(userid);
+        chatRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(!snapshot.exists()){
+                    chatRef.child("id").setValue(userid);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private void readMessage(final String myid, final String userid, final String imageurl){
