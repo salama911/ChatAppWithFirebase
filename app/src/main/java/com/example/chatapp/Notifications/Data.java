@@ -1,5 +1,4 @@
 package com.example.chatapp.Notifications;
-
 public class Data {
     private String user;
     private int icon;

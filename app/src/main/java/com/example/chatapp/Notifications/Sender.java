@@ -1,5 +1,4 @@
 package com.example.chatapp.Notifications;
-
 public class Sender {
     public Data data;
     public String to;
