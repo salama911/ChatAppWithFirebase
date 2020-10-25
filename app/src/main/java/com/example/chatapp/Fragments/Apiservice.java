@@ -11,13 +11,12 @@ import retrofit2.http.POST;
 
 public interface Apiservice {
     @Headers(
-        {"Content-Type:application/json",
-            "Authorization:key=AAAAqn5gAnk:APA91bEmDZxQ3fKze8e_tmOyAu5YAFc98DLrrjZctRcVZUvVfBnFlMKjveKzZdqeQ54K2EqjxQkuBmd1uo-o4ibECswYZC-bqrCXJxYcilzBSCEEtZiN0iT4XpYYeR1ILXJGkvaDWozt"
-        }
+            {
+                    "Content-Type:application/json",
+                    "Authorization:key=AAAAqn5gAnk:APA91bEmDZxQ3fKze8e_tmOyAu5YAFc98DLrrjZctRcVZUvVfBnFlMKjveKzZdqeQ54K2EqjxQkuBmd1uo-o4ibECswYZC-bqrCXJxYcilzBSCEEtZiN0iT4XpYYeR1ILXJGkvaDWozt"
+            }
     )
 
     @POST("fcm/send")
-    Call<MyResponse>sendNotification(@Body Sender body);
-
-
+    Call<MyResponse> sendNotification(@Body Sender body);
 }

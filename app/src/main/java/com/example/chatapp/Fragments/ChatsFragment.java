@@ -77,16 +77,17 @@ public class ChatsFragment extends Fragment {
            }
        });
 
-       updateToken(FirebaseInstanceId.getInstance().getToken());
+        updateToken(FirebaseInstanceId.getInstance().getToken());
 
         return view;
     }
 
-    private void updateToken(String  token){
-        DatabaseReference reference=FirebaseDatabase.getInstance().getReference("Tokens");
-        Token token1=new Token(token);
-        reference.child(fuser.getUid()).setValue(token);
+    private void updateToken(String token){
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Tokens");
+        Token token1 = new Token(token);
+        reference.child(fuser.getUid()).setValue(token1);
     }
+
 
     private void chatList() {
         mUsers=new ArrayList<>();

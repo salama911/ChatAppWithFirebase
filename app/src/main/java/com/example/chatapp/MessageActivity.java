@@ -198,27 +198,30 @@ public class MessageActivity extends AppCompatActivity {
 
             }
         });
-        final String msg=message;
-        reference=FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
+
+
+        final String msg = message;
+
+        reference = FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User user=snapshot.getValue(User.class);
-                    if (notify) {
-                        sendNotification(receiver, user.getUsername(), msg);
-                    }
-                    notify=false;
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                User user = dataSnapshot.getValue(User.class);
+                if (notify) {
+                    sendNotifiaction(receiver, user.getUsername(), msg);
+                }
+                notify = false;
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
     }
 
-    private void sendNotification(String receiver, final String username, final String message) {
 
+    private void sendNotifiaction(String receiver, final String username, final String message){
         DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
         Query query = tokens.orderByKey().equalTo(receiver);
         query.addValueEventListener(new ValueEventListener() {

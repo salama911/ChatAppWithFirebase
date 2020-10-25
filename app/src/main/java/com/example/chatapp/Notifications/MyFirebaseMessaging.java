@@ -73,7 +73,6 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         oreoNotification.getManager().notify(i, builder.build());
 
     }
-
     private void sendNotification(RemoteMessage remoteMessage) {
 
         String user = remoteMessage.getData().get("user");
