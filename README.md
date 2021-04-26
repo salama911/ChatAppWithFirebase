@@ -31,3 +31,8 @@ My Tools :
 ![Screenshot_1619442781](https://user-images.githubusercontent.com/44526915/116100461-3a252d00-a6ad-11eb-908d-e628c096f28d.jpg)
 ![Screenshot_1619442818](https://user-images.githubusercontent.com/44526915/116100651-6a6ccb80-a6ad-11eb-8e1e-bb3c11064a80.jpg)
 ![Screenshot_1619442824](https://user-images.githubusercontent.com/44526915/116100670-7062ac80-a6ad-11eb-9192-572683f42695.jpg)
+
+5-Profile fragment that hold user info 
+
+![Screenshot_1619442784](https://user-images.githubusercontent.com/44526915/116100823-9720e300-a6ad-11eb-9653-abd99888c67d.jpg)
+
