@@ -18,5 +18,6 @@ RegisterScreen , Login Screen & Reset Password
 ![Screenshot_1619442744](https://user-images.githubusercontent.com/44526915/116099686-80c65780-a6ac-11eb-947a-5e1e6b3a9ab5.jpg)
 
 
-Chat fragment That hold all users that u connect with them 
+Chat fragment That hold all users that u connect with them and connected users have a green circle and disconnected have silver circle
+
 ![Screenshot_1619442775](https://user-images.githubusercontent.com/44526915/116099848-aa7f7e80-a6ac-11eb-8133-96a1de7a4736.jpg)
