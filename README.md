@@ -39,3 +39,9 @@ My Tools :
 6-Choosig a profile image from device or google image 
 
 ![Screenshot_1619442806](https://user-images.githubusercontent.com/44526915/116101099-d64f3400-a6ad-11eb-81ee-3d0b2788db6e.jpg)
+
+7- Notification ❤❤ 
+
+![Screenshot_1619444882](https://user-images.githubusercontent.com/44526915/116101224-f252d580-a6ad-11eb-9437-c6cc93d0c9e7.jpg) 
+![Screenshot_1619444887](https://user-images.githubusercontent.com/44526915/116101400-144c5800-a6ae-11eb-95c7-a76af0acedcb.jpg)
+
