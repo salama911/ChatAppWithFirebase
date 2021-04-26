@@ -46,3 +46,6 @@ My Tools :
 ![Screenshot_1619444882](https://user-images.githubusercontent.com/44526915/116101224-f252d580-a6ad-11eb-9437-c6cc93d0c9e7.jpg) 
 ![Screenshot_1619444887](https://user-images.githubusercontent.com/44526915/116101400-144c5800-a6ae-11eb-95c7-a76af0acedcb.jpg)
 
+8- logout it takes u to register& login screen (1st screen)
+
+![Screenshot_1619442801](https://user-images.githubusercontent.com/44526915/116101636-48277d80-a6ae-11eb-8903-9a6c4551d766.jpg)
