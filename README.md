@@ -36,3 +36,6 @@ My Tools :
 
 ![Screenshot_1619442784](https://user-images.githubusercontent.com/44526915/116100823-9720e300-a6ad-11eb-9653-abd99888c67d.jpg)
 
+6-Choosig a profile image from device or google image 
+
+![Screenshot_1619442806](https://user-images.githubusercontent.com/44526915/116101099-d64f3400-a6ad-11eb-81ee-3d0b2788db6e.jpg)
